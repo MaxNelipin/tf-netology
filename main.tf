@@ -27,7 +27,7 @@ resource "yandex_compute_instance" "vm-1" {
 
   resources {
     core_fraction = 20
-    cores = 1
+    cores = 2
     memory = 2
   }
 }
