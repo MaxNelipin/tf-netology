@@ -11,7 +11,7 @@ resource "yandex_compute_image" "ubnt2004" {
 }
 
 resource "yandex_compute_instance" "vm-1" {
-  name = "7_2_Syntax"
+  name = "tr-test"
 
   boot_disk {
     initialize_params {
