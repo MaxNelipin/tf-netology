@@ -5,8 +5,8 @@ provider "yandex" {
   zone      = "ru-central1-a"
 }
 
-resource "yandex_compute_image" "ubuntu_latest" {
-  name = "ubuntu_latest"
+resource "yandex_compute_image" "ubnt2004" {
+  name = "ubnt2004"
   source_family = "ubuntu-2004-lts"
 }
 
@@ -16,7 +16,7 @@ resource "yandex_compute_instance" "vm-1" {
   boot_disk {
     initialize_params {
       //image_id = "fd81hgrcv6lsnkremf32"
-      image_id = yandex_compute_image.ubuntu_latest.id
+      image_id = yandex_compute_image.ubnt2004.id
     }
   }
   network_interface {
